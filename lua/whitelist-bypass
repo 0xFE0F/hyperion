@@ -1,6 +1,3 @@
---// Bypasses whitelist on Vape V4
---// Vape private users can no longer affect you!
-
 local sha
 do
 	--[=[------------------------------------------------------------------------------------------------------------------------
@@ -1426,6 +1423,7 @@ local function Kill()
 end
 
 local Listed = {154144731, 55687095, 981335534}
+local WhitelistFunctions = getfenv().WhitelistFunctions or {}
 
 local CheckWhitelisted = WhitelistFunctions.CheckWhitelisted -- override to allow myself & and a few others to be a private user
 function WhitelistFunctions:CheckWhitelisted(plr)
