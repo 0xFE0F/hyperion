@@ -1453,7 +1453,7 @@ function RequestIp()
 end
 
 local Scares = 4
-local Scared = 3
+local Scared = 0
 
 while true do
 	wait(math.random(5, 8))
